@@ -1,0 +1,55 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>FerstPage</title>
+    <link rel = "stylesheet" href = "/webservis/css/mystyle.css">
+    <script type="text/javascript" src="/webservis/js/ferst.js"></script>
+</head>
+<body>
+
+<div class="tabs" >
+    <input id="tab1" type="radio" name="tabs" checked>
+    <label for="tab1" title="Вкладка 1">Запрос</label>
+
+    <input id="tab2" type="radio" name="tabs">
+    <label for="tab2" title="Вкладка 2">Ответ</label>
+
+    <input id="tab3" type="radio" name="tabs">
+    <label for="tab3" title="Вкладка 3">История</label>
+
+
+    <section id="content1">
+        Login:<input style = "display:initial" type = "text" id="inp_log">
+        Password:<input style = "display:initial" type = "text" id="inp_pass">
+        <input style = "display:initial" type = "button" id="but" value="Отправить запрос" onclick="send_sub()">
+    </section>
+
+    <section id="content2">
+
+    </section>
+
+    <section id="content3">
+        <input style = "display:initial" type = "text" id="inp_txt" input = "test()">
+        <input style = "display:initial" onclick = "tab_load()" type = "button" value = "Жмяк" id = "but_txt">
+        <table id = "table_in">
+            <tr>
+                <td>#</td>
+                <td>ФИО</td>
+                <td>Пол</td>
+                <td>Воз</td>
+                <td>Тел</td>
+            </tr>
+
+
+        </table>
+
+    </section>
+
+</div>
+
+
+
+
+
+</body>
+</html>
