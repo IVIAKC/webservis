@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="webservis:war">
+    <output-path>C:/apache-tomcat-7.0.65/webapps</output-path>
+    <root id="archive" name="webservis.war">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="webservis" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="webservis/web/Web" />
+    </root>
+  </artifact>
+</component>

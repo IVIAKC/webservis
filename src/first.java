@@ -12,7 +12,7 @@ import java.io.PrintWriter;
  */
 
 @WebServlet("/login")
-public class ferst extends HttpServlet {
+public class first extends HttpServlet {
         public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException,ServletException{
 
                 String username = req.getParameter("username");
