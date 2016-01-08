@@ -6,8 +6,8 @@
     <script type="text/javascript" src="/webservis/js/script.js"></script>
 </head>
 <body onload="tab_load()">
-
 <div class="tabs" >
+
     <input id="tab1" type="radio" name="tabs" checked>
     <label for="tab1" title="Вкладка 1">Запрос</label>
 
@@ -17,40 +17,27 @@
     <input id="tab3" type="radio" name="tabs">
     <label for="tab3" title="Вкладка 3">История</label>
 
-
     <section id="content1">
         Login:<input style = "display:initial" type = "text" id="inp_log">
         Password:<input style = "display:initial" type = "text" id="inp_pass">
         <input style = "display:initial" type = "button" id="but" value="Отправить запрос" onclick="send_sub()">
     </section>
 
-    <section id="content2">
-
-    </section>
+    <section id="content2"></section>
 
     <section id="content3">
+        <input style = "display:initial" type = "text" id="search"  oninput="Search()">
         <table id = "table_in">
-            <thead>
-                <tr>
+                <tr id = "header">
                     <td>#</td>
                     <td>ФИО</td>
                     <td>Пол</td>
                     <td>Воз</td>
                     <td>Тел</td>
                 </tr>
-            <thead>
-
-
-
         </table>
-
     </section>
 
 </div>
-
-
-
-
-
 </body>
 </html>
