@@ -1,0 +1,71 @@
+div {
+
+    border: 1px solid #30D5C8;
+    padding: 15px;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    border-radius: 10px 10px 10px 10px;
+    display: block;
+
+}
+table {
+    border: 0px;
+    padding: 15px;
+}
+section {
+    display: none;
+    padding: 15px;
+    background: #fff;
+    position: absolute;
+    top: 55px;
+    left: 15px;
+    right: 5%;
+    bottom: 5%;
+    border: 1px solid #ddd;
+    overflow:auto;
+
+}
+
+tr:nth-child(even) {background:#0095B6;}
+
+.tabs input {
+
+    display: none;
+}
+/* ñòèëè âêëàäîê (òàáîâ) */
+.tabs label {
+
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #aaa;
+    border: 1px solid #ddd;
+    background: #E0FFFF;
+    border-radius: 10px 10px 0 0;
+}
+
+/* èçìåíåíèÿ ñòèëÿ çàãîëîâêîâ âêëàäîê ïðè íàâåäåíèè */
+.tabs label:hover {
+    color: #888;
+    cursor: pointer;
+}
+/* ñòèëè äëÿ àêòèâíîé âêëàäêè */
+.tabs input:checked + label {
+    color: #555;
+    border: 1px solid #ddd;
+    border-top: 1px solid #0095B6;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+
+}
+/* àêòèâàöèÿ ñåêöèé ñ ïîìîùüþ ïåðåêëþ÷àòåëÿ :checked */
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3{
+    display: block;
+}

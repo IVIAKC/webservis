@@ -1,13 +1,13 @@
 /**
  * Created by IVIAKC on 06.11.2015.
  */
-    function addLi(text){
-        var str_creat = document.createElement('li');
-        var sec_in;
-        sec_in = document.getElementById('ol_id');
-        sec_in.appendChild(str_creat);
-        str_creat.innerHTML = text;
-    }
+function addLi(text){
+    var str_creat = document.createElement('li');
+    var sec_in;
+    sec_in = document.getElementById('ol_id');
+    sec_in.appendChild(str_creat);
+    str_creat.innerHTML = text;
+}
 
 function tab_load(){
     var ajax = new XMLHttpRequest();
@@ -55,4 +55,3 @@ function send_sub(){
     var response = ajax.responseText;
     alert(response);
 }
-
