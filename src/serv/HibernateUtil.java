@@ -11,16 +11,16 @@ import java.util.Iterator;
 import java.util.List;
 
 
-public class HibernateUtil {
+public class HibernateUtil{
 
 
     private static SessionFactory dbSessions;
 
     private void createSessionFactory(){
-        dbSessions = new Configuration()
-                .configure("/resources/hibernate.cfg.xml")
-                .addAnnotatedClass(Person.class)
-                .buildSessionFactory();
+        Configuration configuration = new Configuration();
+        configuration.configure("/src/hibernate.cfg.xml");
+        configuration.addAnnotatedClass(Person.class);
+        configuration.buildSessionFactory();
     }
 
     public String checkUser(String login, String pas) {
