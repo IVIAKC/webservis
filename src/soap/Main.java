@@ -1,11 +1,7 @@
 package soap;
 
 import org.dom4j.*;
-import org.hibernate.HibernateException;
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.cfg.AnnotationConfiguration;
 
 import java.io.IOException;
 import java.security.KeyStoreException;
@@ -13,9 +9,7 @@ import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
 import java.security.UnrecoverableKeyException;
 import java.security.cert.CertificateException;
-import java.util.Iterator;
-import java.util.List;
-import java.util.UUID;
+
 /**
  * Created by IVIAKC on 13.11.2015.
  */

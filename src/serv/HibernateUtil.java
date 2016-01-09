@@ -4,7 +4,7 @@ import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.cfg.AnnotationConfiguration;
+
 import org.hibernate.cfg.Configuration;
 
 import java.util.Iterator;
@@ -17,7 +17,7 @@ public class HibernateUtil {
     private static SessionFactory dbSessions;
 
     private void createSessionFactory(){
-        dbSessions = new AnnotationConfiguration()
+        dbSessions = new Configuration()
                 .configure("/resources/hibernate.cfg.xml")
                 .addAnnotatedClass(Person.class)
                 .buildSessionFactory();

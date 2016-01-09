@@ -75,3 +75,15 @@ function del() {
     }
 
 }
+function send_sub(){
+
+    var ajax = new XMLHttpRequest();
+    var x = document.getElementById('inp_log').value;
+    var z = document.getElementById('inp_pass').value;
+    var url = 'http://localhost:8080/web-start/login?username=' + x + '&password=' + z;
+    ajax.open('GET',url,false);
+    ajax.send();
+
+    var response = ajax.responseText;
+    alert(response);
+}
