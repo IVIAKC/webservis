@@ -42,7 +42,7 @@ public class Main {
         getDictionary.addAttribute("xmlns:atc", "http://at-sibir.ru/getDictionary");
         Message message = new Message("a", "1", "b", "2", "c", "3");
         message.CreateMessage(getDictionary);
-        MesageData mesagedata = new MesageData("DId");
+        MessageData mesagedata = new MessageData("DId");
         mesagedata.CreateMesageData(getDictionary);
         System.out.println(root.asXML()); // выводим
 
