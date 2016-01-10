@@ -22,7 +22,7 @@ public class hibernate {
         }
         Session session = factory.openSession();
         try {
-            Query query = session.createQuery("FROM mytable WHERE login = :log AND pas = :pass");
+            Query query = session.createQuery("FROM mytable WHERE login = :log AND password = :pass");
 
             query.setParameter("log", login);
             query.setParameter("pass", password);
@@ -37,6 +37,7 @@ public class hibernate {
         }finally {
             session.close();
         }
+
         return "Неправильно ввели пароль или логин";
 
     }
