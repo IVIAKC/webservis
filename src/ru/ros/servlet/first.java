@@ -17,18 +17,12 @@ import java.io.PrintWriter;
 public class first extends HttpServlet {
     public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException,ServletException{
 
-
-        resp.setContentType("text/html; charset=UTF-8");
-
         JsonReader reader = Json.createReader(req.getInputStream());
         JsonObject newJson = reader.readObject();
         reader.close();
 
-
+        resp.setContentType("text/html; charset=UTF-8");
         PrintWriter out = resp.getWriter();
-
-
         out.print(hibernate.check(newJson.getString("login"), newJson.getString("password")));
     }
-
 }

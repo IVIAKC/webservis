@@ -4,6 +4,7 @@
 var text_doc;
 var j=1;
 var writ;
+
 function tab_load(){
     var ajax = new XMLHttpRequest();
     ajax.open('GET','http://smart-route.ru:8100/adapter-web/rest/dictionary/c580d006-f86f-4bdd-84be-b51de6f626c6',false);
@@ -21,7 +22,6 @@ function compareAge(personA, personB) {
 }
 
 function Search(){
-
     var v = document.getElementById('search').value;
     console.log("Index: " + v);
     writ = text_doc.filter(function(number){
@@ -32,7 +32,6 @@ function Search(){
     writ.sort(compareAge);
     del();
     add();
-
 }
 
 function add(){
@@ -66,8 +65,8 @@ function add(){
         }
         j++;
     });
-
 }
+
 function del() {
     for (var i = 1; i < j; i++) {
         var el = document.getElementById('bod');
@@ -75,6 +74,7 @@ function del() {
     }
 
 }
+
 function send_sub(){
     var ajax = new XMLHttpRequest();
     var log = document.getElementById("inp_log").value;

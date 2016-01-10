@@ -1,13 +1,13 @@
 package ru.ros.servlet;
 
 import javax.persistence.*;
-
 /**
  * Created by IVIAKC on 10.01.2016.
  */
 @Entity
 @Table(name = "mytable")
 public class mytable {
+
     public int getId() {
         return id;
     }

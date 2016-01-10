@@ -1,13 +1,10 @@
 package soap;
 
 import org.dom4j.Element;
-
-
 /**
  * Created by IVIAKC on 08.01.2016.
  */
 public class Header {
-
 
     String Cert;
     String Hash;

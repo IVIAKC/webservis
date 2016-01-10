@@ -2,14 +2,12 @@ package soap;
 
 import org.dom4j.*;
 import org.hibernate.SessionFactory;
-
 import java.io.IOException;
 import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
 import java.security.UnrecoverableKeyException;
 import java.security.cert.CertificateException;
-
 /**
  * Created by IVIAKC on 13.11.2015.
  */
@@ -39,7 +37,5 @@ public class Main {
         MessageData mesagedata = new MessageData("DId");
         mesagedata.CreateMesageData(getDictionary);
         System.out.println(root.asXML()); // выводим
-
-
     }
 }
