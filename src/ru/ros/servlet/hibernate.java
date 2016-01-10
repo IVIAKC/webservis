@@ -18,7 +18,7 @@ public class hibernate {
 
         factory = new AnnotationConfiguration().configure().addAnnotatedClass(mytable.class).buildSessionFactory();
     }
-    public static boolean check(String login,String password){
+    public static String check(String login, String password){
         if(factory==null){
             createFactory();
         }
@@ -33,15 +33,15 @@ public class hibernate {
             List usersList = query.list();
 
             mytable user = (mytable) usersList.iterator().next();
-            return true;
+            return "Добро пожаловать " + user.getFirst_name() + " " + user.getLast_name();
         }catch (HibernateException e){
             e.printStackTrace();
         }catch (NoSuchElementException e){
-            return false;
+            return "Простите, но ваш логин или пароль введён неверно. Пожалуйста, введите снова пароль и логин";
         }finally {
             session.close();
         }
-        return false;
+        return "Простите, но ваш логин или пароль введён неверно. Пожалуйста, введите снова пароль и логин";
 
     }
 }

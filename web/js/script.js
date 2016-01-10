@@ -76,15 +76,15 @@ function del() {
 
 }
 function send_sub(){
-
     var ajax = new XMLHttpRequest();
-    var x = document.getElementById('inp_log').value;
-    var z = document.getElementById('inp_pass').value;
-    var url = 'http://localhost:8080/web-start/login?username=' + x + '&password=' + z;
-    ajax.open('GET',url,false);
-    ajax.send();
+    var log = document.getElementById("inp_log").value;
+    var pas = document.getElementById("inp_pass").value;
+    ajax.open('POST', '/web-start/login', false);
 
-    var response = ajax.responseText;
-
-    alert(response.toString());
+    var json = new Object();
+    json.login = log;
+    json.password = pas;
+    ajax.send(JSON.stringify(json));
+    var otv =  ajax.responseText;
+    alert(otv);
 }
