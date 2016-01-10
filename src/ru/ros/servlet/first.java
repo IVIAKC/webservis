@@ -1,3 +1,5 @@
+package ru.ros.servlet;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,12 +21,11 @@ public class first extends HttpServlet {
 
         resp.setContentType("text/html; charset=UTF-8");
         PrintWriter out = resp.getWriter();
+        hibernate hib = new hibernate();
+        String otv ="";
+        otv=hib.check(username,password);
+        out.println(otv);
 
-        if(username.equals("master")&& password.equals("yoda")){
-            out.println("Welcom");
-        }else{
-            out.println("Incorect login or password");
-        }
     }
 
 }
