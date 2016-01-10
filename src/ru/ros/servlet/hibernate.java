@@ -14,11 +14,11 @@ import java.util.NoSuchElementException;
 public class hibernate {
     private static SessionFactory factory;
 
-    private void createFactory(){
+    private static void createFactory(){
 
         factory = new AnnotationConfiguration().configure().addAnnotatedClass(mytable.class).buildSessionFactory();
     }
-    public String check(String login,String password){
+    public static boolean check(String login,String password){
         if(factory==null){
             createFactory();
         }
@@ -26,22 +26,22 @@ public class hibernate {
 
 
         try {
-            Query query = session.createQuery("FROM mytable WHERE login = :log");
+            Query query = session.createQuery("FROM mytable WHERE login = :log AND password = :pass");
 
             query.setParameter("log", login);
-
+            query.setParameter("pass", password);
             List usersList = query.list();
 
             mytable user = (mytable) usersList.iterator().next();
-            return "Добро пожаловать " + user.getFirst_name() + " " + user.getLast_name();
+            return true;
         }catch (HibernateException e){
             e.printStackTrace();
         }catch (NoSuchElementException e){
-            return " asd Простите, но ваш логин или пароль введён неверно. Пожалуйста, введите снова пароль и логин";
+            return false;
         }finally {
             session.close();
         }
-        return "Простите, но ваш логин или пароль введён неверно. Пожалуйста, введите снова пароль и логин";
+        return false;
 
     }
 }

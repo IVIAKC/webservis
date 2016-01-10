@@ -85,5 +85,6 @@ function send_sub(){
     ajax.send();
 
     var response = ajax.responseText;
-    alert(response);
+
+    alert(response.toString());
 }
