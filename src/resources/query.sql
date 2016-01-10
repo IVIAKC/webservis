@@ -6,19 +6,19 @@ CREATE TABLE mytable (
     last_name        varchar(20)
 );
 
-INSERT INTO mytable(login,password,first_name,last_name)
+INSERT INTO mytable(login,pas,first_name,last_name)
 VALUES ('IVIAKC','qwe','Max','Bytorin');
 
-INSERT INTO mytable(login,password,first_name,last_name)
+INSERT INTO mytable(login,pas,first_name,last_name)
 VALUES ('eXerious','asd','Dmitr','Bytorin');
 
-INSERT INTO mytable(login,password,first_name,last_name)
+INSERT INTO mytable(login,pas,first_name,last_name)
 VALUES ('Devostator','zxc','Artem','Kicel');
 
-INSERT INTO mytable(login,password,first_name,last_name)
+INSERT INTO mytable(login,pas,first_name,last_name)
 VALUES ('D','zxc','Artem','Kicel');
 
-INSERT INTO mytable(login,password,first_name,last_name)
-VALUES ('Kir','wer','Василий','Бабаевич');
+INSERT INTO mytable(login,pas,first_name,last_name)
+VALUES ('Kir','wer','пїЅпїЅпїЅпїЅпїЅпїЅпїЅ','пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ');
 
 DROP table mytable;
