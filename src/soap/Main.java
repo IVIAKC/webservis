@@ -40,7 +40,7 @@ public class Main {
         Element body = createBody(envelop);
 
         String hash = en.getHash(body);
-        envelop.remove(body);
+        //envelop.remove(body);
 
         Header header = new Header(certificate,hash, en );
         header.generateHeader(envelop);

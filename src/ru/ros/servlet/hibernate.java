@@ -37,7 +37,6 @@ public class hibernate {
         }finally {
             session.close();
         }
-
         return "Неправильно ввели пароль или логин";
 
     }

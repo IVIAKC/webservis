@@ -6,6 +6,6 @@ package ru.ros.servlet;
 public class main {
     public static void main(String[] args){
         hibernate hib = new hibernate();
-        System.out.println(hib.check("IVIAKC","qwe"));
+        System.out.println(hib.check("",""));
     }
 }
