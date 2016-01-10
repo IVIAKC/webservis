@@ -13,7 +13,7 @@ public class Hibernate {
     private static SessionFactory factory;
 
     private static void createFactory(){
-        factory = new AnnotationConfiguration().configure().addAnnotatedClass(mytable.class).buildSessionFactory();
+        factory = new AnnotationConfiguration().configure("/resources/hibernate.cfg.xml").addAnnotatedClass(mytable.class).buildSessionFactory();
     }
 
     public static String check(String login, String password){
