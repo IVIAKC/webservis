@@ -6,17 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b600ce6-1399-489b-bb7f-e8f9b3857295" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20140107.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/first.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/web_start_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/web_start_war.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" afterPath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" />
+    <list default="true" id="6b600ce6-1399-489b-bb7f-e8f9b3857295" name="Default" comment="Хаб работает + сервлет&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/ros/servlet/first.java" afterPath="$PROJECT_DIR$/src/ru/ros/servlet/first.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/ros/servlet/hibernate.java" afterPath="$PROJECT_DIR$/src/ru/ros/servlet/hibernate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/script.js" afterPath="$PROJECT_DIR$/web/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webservis.iml" afterPath="$PROJECT_DIR$/webservis.iml" />
     </list>
     <ignored path="webservis.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,8 +34,8 @@
       <file leaf-file-name="first.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ru/ros/servlet/first.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0023474179">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.64084506">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1027,7 +1018,7 @@
       <workItem from="1452245861602" duration="23735000" />
       <workItem from="1452354163806" duration="5309000" />
       <workItem from="1452371401283" duration="8499000" />
-      <workItem from="1452382903760" duration="10555000" />
+      <workItem from="1452382903760" duration="10703000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <created>1447074202697</created>
@@ -1071,15 +1062,21 @@
       <option name="project" value="LOCAL" />
       <updated>1452387370372</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Хаб работает + сервлет&#10;">
+      <created>1452393929303</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1452393929303</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74525000" />
+    <option name="totallyTimeSpent" value="74673000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1093,7 +1090,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15107362" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15107362" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1132,7 +1129,8 @@
     <MESSAGE value="стартовое хиб" />
     <MESSAGE value="стартовое хиб2" />
     <MESSAGE value="Рабочий хиб не работает сервлет&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Рабочий хиб не работает сервлет&#10;" />
+    <MESSAGE value="Хаб работает + сервлет&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Хаб работает + сервлет&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1397,8 +1395,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/ros/servlet/first.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0023474179">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.64084506">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
