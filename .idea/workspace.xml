@@ -6,24 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b600ce6-1399-489b-bb7f-e8f9b3857295" name="Default" comment="Хаб работает + сервлет json&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_json_1_0_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jcrypto_jca_2_4_0_R205314.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/out.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/soap/Encrypt.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/css/Main.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" afterPath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" />
+    <list default="true" id="6b600ce6-1399-489b-bb7f-e8f9b3857295" name="Default" comment="Результат&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/ros/servlet/first.java" afterPath="$PROJECT_DIR$/src/ru/ros/servlet/first.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/ros/servlet/hibernate.java" afterPath="$PROJECT_DIR$/src/ru/ros/servlet/hibernate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/ros/servlet/main.java" afterPath="$PROJECT_DIR$/src/ru/ros/servlet/main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/soap/Header.java" afterPath="$PROJECT_DIR$/src/soap/Header.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/soap/Main.java" afterPath="$PROJECT_DIR$/src/soap/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/soap/Message.java" afterPath="$PROJECT_DIR$/src/soap/Message.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/soap/MessageData.java" afterPath="$PROJECT_DIR$/src/soap/MessageData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webservis.iml" afterPath="$PROJECT_DIR$/webservis.iml" />
     </list>
     <ignored path="webservis.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1136,7 +1120,7 @@
       <workItem from="1452245861602" duration="23735000" />
       <workItem from="1452354163806" duration="5309000" />
       <workItem from="1452371401283" duration="8499000" />
-      <workItem from="1452382903760" duration="19192000" />
+      <workItem from="1452382903760" duration="19859000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <created>1447074202697</created>
@@ -1228,11 +1212,17 @@
       <option name="project" value="LOCAL" />
       <updated>1452399918053</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Результат&#10;">
+      <created>1452404360230</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1452404360230</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83162000" />
+    <option name="totallyTimeSpent" value="83829000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
@@ -1291,7 +1281,8 @@
     <MESSAGE value="Рабочий хиб не работает сервлет&#10;" />
     <MESSAGE value="Хаб работает + сервлет&#10;" />
     <MESSAGE value="Хаб работает + сервлет json&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Хаб работает + сервлет json&#10;" />
+    <MESSAGE value="Результат&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Результат&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
