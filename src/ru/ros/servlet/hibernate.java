@@ -22,7 +22,7 @@ public class hibernate {
         }
         Session session = factory.openSession();
         try {
-            Query query = session.createQuery("FROM mytable WHERE login = :log AND password = :pass");
+            Query query = session.createQuery("FROM mytable WHERE login = :log AND pas = :pass");
 
             query.setParameter("log", login);
             query.setParameter("pass", password);
