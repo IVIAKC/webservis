@@ -63,9 +63,6 @@ public class Header {
         Element wReference = securityTokenReference.addElement("wsse:Reference")
                 .addAttribute("URI", "#CertId-1")
                 .addAttribute("ValueType", "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3");
-
     }
-
-
 
 }
