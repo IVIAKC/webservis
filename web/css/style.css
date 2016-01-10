@@ -2,6 +2,7 @@ div {
 
     border: 1px solid #30D5C8;
     padding: 15px;
+    min-width: 350px;
     position: fixed;
     top: 10%;
     left: 10%;

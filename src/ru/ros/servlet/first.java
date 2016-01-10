@@ -14,8 +14,10 @@ import java.io.PrintWriter;
  * Created by IVIAKC on 06.11.2015.
  */
 @WebServlet("/login")
-public class first extends HttpServlet {
+public class First extends HttpServlet {
     public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException,ServletException{
+
+
 
         JsonReader reader = Json.createReader(req.getInputStream());
         JsonObject newJson = reader.readObject();
@@ -23,6 +25,6 @@ public class first extends HttpServlet {
 
         resp.setContentType("text/html; charset=UTF-8");
         PrintWriter out = resp.getWriter();
-        out.print(hibernate.check(newJson.getString("login"), newJson.getString("password")));
+        out.print(Hibernate.check(newJson.getString("login"), newJson.getString("password")));
     }
 }

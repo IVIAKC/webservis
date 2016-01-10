@@ -1,66 +1,56 @@
 package soap;
 
-
 import org.dom4j.Element;
-import java.text.ParseException;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Created by IVIAKC on 08.01.2016.
+ * Created by IVIAKC on 9.01.2016.
  */
-
 public class Message {
-    String SName;
-    String SCode;
-    String RName;
-    String RCode;
-    String OName;
-    String OCode;
-    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-    Date date = new Date();
+    String sName;
+    String sCode;
+    SimpleDateFormat currentDate =  new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
 
-    public Message(String SendName, String Sendcode, String RecName, String RecCode, String OrName, String OrCode) {
-        SName = SendName;
-        SCode = Sendcode;
-        RName = RecName;
-        RCode = RecCode;
-        OName = OrName;
-        OCode = OrCode;
-    };
+    public String getCurrentDate() {
+        return currentDate.format(new Date());
+    }
 
-    public void CreateMessage (Element root) {
-        Element Message = root.addElement("smev:Message");
-        Message.addAttribute("xmlns:smev","http://smev.gosuslugi.ru/rev120315");
+    public Message(String senderName, String senderCode){
+        sName = senderName;
+        sCode = senderCode;
 
-        Element Sender = Message.addElement("smev:Sender");
-        Element Code = Sender.addElement("smev:Code")
-                .addText(SCode);
-        Element Name = Sender.addElement("smev:Name")
-                .addText(SName);
-        Element Recipient = Message.addElement("smev:Recipient");
-        Code = Recipient.addElement("smev:Code")
-                .addText(RCode);
-        Name = Recipient.addElement("smev:Name")
-                .addText(RName);
+    }
 
-        Element Originator = Message.addElement("smev:Originator");
-        Code = Originator.addElement("smev:Code")
-                .addText(OCode);
-        Name = Originator.addElement("smev:Name")
-                .addText(OName);
-
-        Element TypeCode = Message.addElement("smev:TypeCode")
+    public void generateMessage(Element getDictionary){
+        Element message = getDictionary.addElement("smev:Message");
+        Element sender = message.addElement("smev:Sender");
+        Element code = sender.addElement("smev:Code")
+                .addText("IPGU01541");
+        Element name = sender.addElement("smev:Name")
+                .addText("EPGU");
+        Element recipient = message.addElement("smev:Recipient");
+        code = recipient.addElement("smev:Code")
+                .addText("000000541");
+        name = recipient.addElement("smev:Name")
+                .addText("ATC System");
+        Element originator = message.addElement("smev:Originator");
+        code = originator.addElement("smev:Code")
+                .addText("IPGU01541");
+        name = originator.addElement("smev:Name")
+                .addText("EPGU");
+        Element typeCode = message.addElement("smev:TypeCode")
                 .addText("GSRV");
-        Element Status = Message.addElement("smev:Status")
+        Element status = message.addElement("smev:Status")
                 .addText("REQUEST");
-        Element Date = Message.addElement("smev:Date")
-                .addText(dateFormat.format(date));
-        Element ExchangeType = Message.addElement("smev:ExchangeType")
-                .addText("3");
-        Element ServiceCode = Message.addElement("smev:ServiceCode")
+        Element date = message.addElement("smev:Date")
+                .addText(getCurrentDate());
+        Element exchangeType = message.addElement("smev:ExchangeType")
+                .addText("1");
+        Element serviceCode = message.addElement("smev:ServiceCode")
                 .addText("5440100010000545045");
-        Element CaseNumber = Message.addElement("smev:CaseNumber")
+        Element caseNumber = message.addElement("smev:CaseNumber")
                 .addText("70263950");
     }
 }

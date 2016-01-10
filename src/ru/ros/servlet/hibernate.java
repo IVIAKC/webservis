@@ -9,7 +9,7 @@ import java.util.NoSuchElementException;
 /**
  * Created by IVIAKC on 10.01.2016.
  */
-public class hibernate {
+public class Hibernate {
     private static SessionFactory factory;
 
     private static void createFactory(){

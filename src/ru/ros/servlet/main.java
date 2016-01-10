@@ -3,9 +3,9 @@ package ru.ros.servlet;
 /**
  * Created by IVIAKC on 10.01.2016.
  */
-public class main {
+public class Main {
     public static void main(String[] args){
-        hibernate hib = new hibernate();
+        Hibernate hib = new Hibernate();
         System.out.println(hib.check("IVIAKC","qwe"));
     }
 }
