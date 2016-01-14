@@ -33,7 +33,7 @@ public class hibernate {
         }catch (HibernateException e){
             e.printStackTrace();
         }catch (NoSuchElementException e){
-            return "Аля-улю";
+            e.printStackTrace();
         }finally {
             session.close();
         }

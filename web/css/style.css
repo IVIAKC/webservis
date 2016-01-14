@@ -5,8 +5,8 @@ div {
     min-width: 350px;
     position: fixed;
     top: 10%;
-    left: 10%;
-    right: 10%;
+    left: 25%;
+    right: 25%;
     bottom: 10%;
     border-radius: 10px 10px 10px 10px;
     display: block;

@@ -14,7 +14,7 @@ import java.io.PrintWriter;
  * Created by IVIAKC on 06.11.2015.
  */
 @WebServlet("/login")
-public class first extends HttpServlet {
+public class login extends HttpServlet {
     public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException{
 
 
